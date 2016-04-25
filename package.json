@@ -10,10 +10,10 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/jessedodds/plangrid-helpdesk-test"
+    "url": "https://github.com/jessedodds/pg-helpdesk-test"
   },
   "bugs": {
-    "url": "https://github.com/jessedodds/plangrid-helpdesk-test/issues"
+    "url": "https://github.com/jessedodds/pg-helpdesk-test/issues"
   },
   "private": false,
   "scripts": {
