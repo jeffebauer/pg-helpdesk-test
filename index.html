@@ -3,8 +3,8 @@
   <head>
     <meta charset="utf-8"/>
     <meta http-equiv="x-ua-compatible" content="ie=edge"/>
-    <title>Barebones</title>
-    <meta name="description" content="A barebones project."/>
+    <title>PlanGrid Help Center</title>
+    <meta name="description" content="PlanGrid's Helpdesk Service."/>
     <meta property="og:image" content=""/>
     <link rel="apple-touch-icon" href="/components/app/apple-touch-icon.png"/>
     <link rel="icon" href="/components/app/favicon.ico"/>
@@ -13,26 +13,99 @@
     <script defer src="/bundle/bundle.js"></script>
   </head>
   <body>
-    <section class="intro">
-      <a class="logo" href="https://github.com/jaydenseric/Barebones"><img src="/components/intro/barebones-logo.svg" alt="Barebones logo"/></a>
-      <p>After <a href="https://github.com/jaydenseric/Barebones#setup" target="_blank">setup</a> and studying these example components:</p>
-      <ol>
-        <li>Delete them by removing the body content of <code>/index.html</code>, the <code>@import</code> in <code>/app/index.css</code> and and every component directory except for <code>/components/app</code>.</li>
-        <li>Customize the <code>/index.html</code> metadata.</li>
-        <li>Customize the <code>/app</code> global assets.</li>
-        <li>Edit <code>/package.json</code> and <code>/readme.md</code> to be about your project.</li>
-      </ol>
-      <aside class="counter paused">
-        <h1>Counter</h1>
-        <p>An example component using an ES6 class module and SVG icons.</p>
-        <output>0</output>
-        <button title="Play/pause">
-          <svg>
-            <use class="play-icon" xlink:href="/components/counter/icons.svg#play"/>
-            <use class="pause-icon" xlink:href="/components/counter/icons.svg#pause"/>
-          </svg>
-        </button>
+    <nav role="navigation">
+      <div class="nav-group">
+        <h1>Help Center</h1>
+        <p class="message-helper">Can't find what you're looking for? Contact <a href="#">help@plangrid.com</a></p>
+      </div>
+      <div class="sidebar">
+        <input type="text" class="search-topside" placeholder="What can we help you with?" />
+      </div>
+    </nav>
+
+    <section class="content--with-sidebar">
+      <section class="categories">
+        <a class="category-card" href="#">
+          <div class="category-image"><img src="" alt=""></div>
+          <h5>Annotations</h5>
+        </a>
+        <a class="category-card" href="#">
+          <div class="category-image"><img src="" alt=""></div>
+          <h5>Attachments</h5>
+        </a>
+        <a class="category-card" href="#">
+          <div class="category-image"><img src="" alt=""></div>
+          <h5>Frequently Asked Questions</h5>
+        </a>
+        <a class="category-card" href="#">
+          <div class="category-image"><img src="" alt=""></div>
+          <h5>Hyperlinks</h5>
+        </a>
+        <a class="category-card" href="#">
+          <div class="category-image"><img src="" alt=""></div>
+          <h5>Issues and Punchlists</h5>
+        </a>
+        <a class="category-card" href="#">
+          <div class="category-image"><img src="" alt=""></div>
+          <h5>My Account</h5>
+        </a>
+        <a class="category-card" href="#">
+          <div class="category-image"><img src="" alt=""></div>
+          <h5>My Device</h5>
+        </a>
+        <a class="category-card" href="#">
+          <div class="category-image"><img src="" alt=""></div>
+          <h5>Plans</h5>
+        </a>
+        <a class="category-card" href="#">
+          <div class="category-image"><img src="" alt=""></div>
+          <h5>Progress Photos</h5>
+        </a>
+        <a class="category-card" href="#">
+          <div class="category-image"><img src="" alt=""></div>
+          <h5>Projects</h5>
+        </a>
+        <a class="category-card" href="#">
+          <div class="category-image"><img src="" alt=""></div>
+          <h5>RFIs</h5>
+        </a>
+        <a class="category-card" href="#">
+          <div class="category-image"><img src="" alt=""></div>
+          <h5>Reports</h5>
+        </a>
+        <a class="category-card" href="#">
+          <div class="category-image"><img src="" alt=""></div>
+          <h5>Searching and Filtering</h5>
+        </a>
+        <a class="category-card" href="#">
+          <div class="category-image"><img src="" alt=""></div>
+          <h5>Snapshots</h5>
+        </a>
+        <a class="category-card" href="#">
+          <div class="category-image"><img src="" alt=""></div>
+          <h5>Team</h5>
+        </a>
+        <a class="category-card" href="#">
+          <div class="category-image"><img src="" alt=""></div>
+          <h5>Troubleshooting</h5>
+        </a>
+        <a class="category-card" href="#">
+          <div class="category-image"><img src="" alt=""></div>
+          <h5>Video Tutorials</h5>
+        </a>
+        <a class="category-card" href="#">
+          <div class="category-image"><img src="" alt=""></div>
+          <h5>Windows</h5>
+        </a>
+      </section>
+
+      <aside>
+
       </aside>
     </section>
+
+    <script id="__bs_script__">//<![CDATA[
+    document.write("<script async src='http://HOST:3000/browser-sync/browser-sync-client.2.12.3.js'><\/script>".replace("HOST", location.hostname));
+//]]></script>
   </body>
 </html>

@@ -1,0 +1,72 @@
+a {
+  color: var(--color--text-link);
+  text-decoration: none;
+  transition: .1s linear;
+
+  &:hover,
+  &:focus {
+    text-decoration: underline;
+    color: var(--color--text-link--hover);
+  }
+
+  &:focus {
+    @include focus;
+  }
+
+  &:active {
+    color: var(--color--text-link--active);
+  }
+}
+
+a,
+button {
+  cursor: pointer;
+}
+
+b,
+strong,
+dfn {
+  font-weight: var(--type--font-weight--bold);
+}
+
+mark {
+  background-color: var(--color--highlight);
+}
+
+input[type=search] {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+textarea,
+select,
+input {
+  box-sizing: border-box;
+  border: 1px solid var(--color--border);
+  border-radius: var(--base--border-radius);
+  font-family: var(--base--font-stack);
+  height: 2rem;
+  padding-left: .5rem;
+  padding-right: .5rem;
+  background-color: var(--color--field-background);
+
+  &:placeholder {
+    color: var(--color--field--placeholder);
+  }
+
+  &:focus {
+    border: 1px solid var(--color--border--focus);
+    box-shadow: 0 0 0 2px var(--color--border-shadow--focus);
+    outline: none;
+  }
+
+  &:disabled {
+    background-color: var(--color--field-background--disabled);
+    border-color: var(--color--field-border--disabled);
+    cursor: not-allowed;
+  }
+}

@@ -4,6 +4,7 @@ const ExtractTextPlugin = require('extract-text-webpack-plugin')
 const atImport = require('postcss-import')
 const cssnext = require('postcss-cssnext')
 const reporter = require('postcss-reporter')
+const BrowserSyncPlugin = require('browser-sync-webpack-plugin')
 
 module.exports = {
   entry: [
@@ -41,6 +42,13 @@ module.exports = {
         warnings: false
       }
     }),
-    new ExtractTextPlugin('bundle.css')
+    new ExtractTextPlugin('bundle.css'),
+    new BrowserSyncPlugin({
+      // browse to http://localhost:3000/ during development,
+      // ./public directory is being served
+      host: 'localhost',
+      port: 3000,
+      server: { baseDir: ['./'] }
+    })
   ]
 }
