@@ -1,5 +1,3 @@
-@import '../counter';
-
 @custom-media --intro-breakpoint-1 (width >= 32em);
 @custom-media --intro-breakpoint-2 (width >= 50em);
 

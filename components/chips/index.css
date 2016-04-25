@@ -1,0 +1,43 @@
+:root {
+  --base--font-stack: 'Aktiv Grotesk', 'Roboto', sans-serif;
+  --base--font-size: 16px;
+  --base--line-height: 1.4;
+  --base--border-radius: .1875rem;
+  --color--grey-darkest: #43484c;
+  --color--grey-dark: #5e6977;
+  --color--grey: #86939e;
+  --color--grey-light: #d9d9d9;
+  --color--grey-lightest: #f9f9f9;
+  --color--primary: #4399ee;
+  --color--secondary: #ccac6c;
+  --color--additive: #4fbe6e;
+  --color--destructive: #e74143;
+  --color--body-copy: var(--color--grey-darkest);
+  --color--highlight: color(var(--color--primary) alpha(50%));
+  --color--background: var(--color--grey-lightest);
+  --color--text-link: var(--color--primary);
+  --color--text-link--hover: color(var(--color--primary) shade(15%));
+  --color--text-link--active: color(var(--color--primary) shade(30%));
+  --color--border: color(var(--color--grey-light) tint(15%));
+  --color--border--focus: color(var(--color--primary) tint(25%));
+  --color--border-shadow--focus: color(var(--color--primary) tint(66%));
+  --color--field--placeholder: color(var(--color--grey));
+  --color--field-border--disabled: color(var(--color--grey-light) tint(50%));
+  --color--field-background: white;
+  --color--field-background--disabled: color(var(--color--grey-light) tint(50%));
+  --shadow--level--zero: 0 0 0 1px color(var(--color--grey-darkest) alpha(5%)), 0 1px 1px color(var(--color--grey-darkest) alpha(8%));
+  --shadow--level--one: 0 1px 2px color(var(--color--grey-darkest) alpha(5%)), 0 2px 12px color(var(--color--grey-darkest) alpha(10%));
+  --shadow--level--two: 0 1px 3px color(var(--color--grey-darkest) alpha(10%)), 0 8px 16px color(var(--color--grey-darkest) alpha(15%));
+  --type--font-weight--light: 300;
+  --type--font-weight--normal: 400;
+  --type--font-weight--bold: 500;
+}
+
+@custom-media --breakpoint--extra-small (width < 34rem);
+@custom-media --breakpoint--small (width >= 34rem);
+@custom-media --breakpoint--medium (width >= 48rem);
+@custom-media --breakpoint--large (width >= 62rem);
+@custom-media --breakpoint--extra-large (width >= 75rem);
+
+/* USAGE EXAMPLE
+color: var(--counter-pink); */

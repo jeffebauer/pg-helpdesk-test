@@ -1,4 +1,10 @@
-@import '../intro';
+@import '../fix';
+@import '../core';
+@import '../chips';
+@import '../helpers';
+@import '../typography';
+@import '../navigation';
+@import '../categories';
 
 html {
   text-size-adjust: 100%;
@@ -8,13 +14,20 @@ html {
 }
 
 body {
-  margin: 1em;
-  font-family: sans-serif;
-  line-height: 1;
-  background-color: color(black tint(18%));
+  font-family: var(--base--font-stack);
+  font-size: var(--base--font-size);
+  line-height: var(--base--line-height);
+  background-color: var(--color--background);
+  color: var(--color--body-copy);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
 ::selection {
-  background-color: color(yellow alpha(50%));
+  background-color: var(--color--highlight);
   opacity: 0;
 }
