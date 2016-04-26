@@ -23,7 +23,8 @@
     "build:watch": "npm run build -- --watch",
     "lint:js": "eslint . --ignore-pattern bundle || true",
     "lint:css": "stylelint **/**/*.css || true",
-    "start": "http-server -o"
+    "start": "http-server -o",
+    "postinstall": "webpack"
   },
   "dependencies": {
     "babel-core": "^6.7.6",
