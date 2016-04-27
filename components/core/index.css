@@ -70,3 +70,7 @@ input {
     cursor: not-allowed;
   }
 }
+
+input:not([type=checkbox]):not([type=radio]) {
+  -webkit-appearance: none;
+}

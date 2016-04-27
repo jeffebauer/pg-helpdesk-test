@@ -15,9 +15,20 @@ nav {
   flex-grow: 1;
   flex-direction: column;
   align-items: center;
-  margin-right: 1rem;
   @media (--breakpoint--medium) {
     flex-direction: row;
+    margin-right: 1rem;
+  }
+
+  & svg {
+    display: inline-block;
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-bottom: .5rem;
+    @media (--breakpoint--medium) {
+      margin-right: .5rem;
+      margin-bottom: 0;
+    }
   }
 
   & h1 {
@@ -41,7 +52,7 @@ nav {
 .sidebar {
   width: 100%;
   @media (--breakpoint--medium) {
-    width: 25%;
+    width: 33.33%;
   }
 
   & .search-topside {

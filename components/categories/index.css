@@ -1,3 +1,7 @@
+:root {
+  --card-margin: .5rem;
+}
+
 .categories {
   text-align: center;
   padding: .5rem;
@@ -13,26 +17,26 @@
   background-color: white;
   box-shadow: var(--shadow--level--zero);
   border-radius: var(--base--border-radius);
-  flex: 1 45%;
-  margin: .5rem;
-  transition: box-shadow ease-out .25s, transform ease-out .25s;
-  transform: scale(1) translateY(0);
+  flex: 1 100%;
+  margin: var(--card-margin);
+  transition: box-shadow ease-out .25s, transform ease-in .25s;
+  transform: translateY(0);
   z-index: 1;
   @media (--breakpoint--small) {
-    flex: 1 28%;
+    flex: 1 calc(50% - (var(--card-margin) * 2));
   }
   @media (--breakpoint--medium) {
-    flex: 1 22%;
+    flex: 1 calc(33.33% - (var(--card-margin) * 3));
   }
   @media (--breakpoint--large) {
-    flex: 1 18%;
+    flex: 1 calc(25% - (var(--card-margin) * 4));
   }
 
   &:hover {
     box-shadow: var(--shadow--level--two);
     transition: box-shadow ease-in .1s, transform ease-out .1s;
     text-decoration: none;
-    transform: scale(1.0125) translateY(-.125rem);
+    transform: translateY(-.125rem);
     z-index: 2;
   }
 
