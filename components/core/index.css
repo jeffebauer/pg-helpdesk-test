@@ -75,3 +75,10 @@ input {
 input:not([type=checkbox]):not([type=radio]) {
   -webkit-appearance: none;
 }
+
+input[type=search] {
+  background-image: url('/components/navigation/ic_pg-search.svg');
+  background-repeat: no-repeat;
+  background-position: .5rem center;
+  padding-left: 1.5rem;
+}
